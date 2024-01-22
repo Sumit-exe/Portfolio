@@ -30,7 +30,7 @@ function Hero() {
             </a>
           </div>
           
-          <a href="contact" >
+            <a href="\src\resume\Sumit Sharma Resume.pdf" download={'Sumit_Sharma_Resume'}>
           <button className='btn my-5'>Download CV</button>
           </a>
           
