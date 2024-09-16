@@ -1,9 +1,9 @@
-import React from 'react'
+
 import myPhoto from '../assets/myPhoto.jpeg'
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
-import resume from '../../public/resume/Sumit Sharma Resume.pdf'
+import resume from '../../public/resume/Jake_s_Resume.pdf'
 
 function Hero() {
   return (
@@ -19,13 +19,13 @@ function Hero() {
           Welcome to my web developer portfolio! . I invite you to explore my portfolio and discover the projects that showcase my expertise and creativity.
           </p>
           <div className='flex gap-4'>
-            <a href="https://www.linkedin.com/in/sumit-sharma-47820b216/" target='_blank' className='p-3 rounded-full shadow-md cursor-pointer hover:shadow-main'>
+            <a href="https://www.linkedin.com/in/sumit-sharma-47820b216/" target='_blank' className='p-3 rounded-full shadow-md cursor-pointer hover:shadow-main' rel="noreferrer">
               <FaLinkedinIn className='h-8 w-8'/>
             </a>
-            <a href="https://www.instagram.com/sumit_sharmaa27/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fonetap%2F%3Fnext%3D%252F%26__coig_login%3D1" target='_blank' className='p-3 rounded-full shadow-md cursor-pointer hover:shadow-main'>
+            <a href="https://www.instagram.com/sumit_sharmaa27/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fonetap%2F%3Fnext%3D%252F%26__coig_login%3D1" target='_blank' className='p-3 rounded-full shadow-md cursor-pointer hover:shadow-main' rel="noreferrer">
               <FaInstagram className='h-8 w-8'/>
             </a>
-            <a href="https://github.com/Sumit-exe" target='_blank' className='p-3 rounded-full shadow-md cursor-pointer hover:shadow-main'>
+            <a href="https://github.com/Sumit-exe" target='_blank' className='p-3 rounded-full shadow-md cursor-pointer hover:shadow-main' rel="noreferrer">
               <FaGithub className='h-8 w-8'/>
             </a>
           </div>
