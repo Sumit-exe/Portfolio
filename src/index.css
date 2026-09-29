@@ -41,6 +41,35 @@
   transition: all 1s ease-in-out;
 }
 
+/* subtle dot grid for hero background */
+.hero-dots {
+  background-image: radial-gradient(circle, #a444bb22 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* slow spinning ring around photo */
+.spin-slow {
+  animation: spin-slow 18s linear infinite;
+}
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Typing cursor blink */
+.typing-cursor {
+  display: inline-block;
+  color: #a444bb;
+  font-weight: 300;
+  animation: blink 0.8s step-end infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 @keyframes animate {
   0%{
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;

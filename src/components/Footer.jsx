@@ -3,11 +3,13 @@ import { FaGithub, FaInstagram, FaLinkedinIn ,FaArrowUp  } from "react-icons/fa"
 import { Link } from "react-scroll";
 
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="bg-slate-900 p-10 w-full">
       <div className="flex justify-between items-center">
       <div className="flex justify-around items-center max-md:flex-col gap-4 max-md:items-start flex-1">
-        <p>Copyright © 2024 by Sumit Sharma | All rights Reserved</p>
+        <p>Copyright © {year} by Sumit Sharma | All rights Reserved</p>
         <div className="flex gap-4">
           <a
             href="https://www.linkedin.com/in/sumit-sharma-47820b216/"

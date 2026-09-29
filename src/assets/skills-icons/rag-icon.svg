@@ -1,0 +1,13 @@
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- cylinder / vector store -->
+  <ellipse cx="24" cy="11" rx="16" ry="5" fill="#7c3aed" opacity="0.85"/>
+  <rect x="8" y="11" width="32" height="18" fill="#8b5cf6" opacity="0.6"/>
+  <ellipse cx="24" cy="29" rx="16" ry="5" fill="#7c3aed" opacity="0.85"/>
+  <!-- search magnifier -->
+  <circle cx="30" cy="35" r="6" stroke="#4c1d95" stroke-width="2.5" fill="white" opacity="0.95"/>
+  <line x1="34.2" y1="39.2" x2="38" y2="43" stroke="#4c1d95" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- dots suggesting vectors -->
+  <circle cx="17" cy="20" r="1.8" fill="white" opacity="0.9"/>
+  <circle cx="24" cy="20" r="1.8" fill="white" opacity="0.9"/>
+  <circle cx="31" cy="20" r="1.8" fill="white" opacity="0.9"/>
+</svg>

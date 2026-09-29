@@ -3,31 +3,58 @@ import ProjectCard from './ProjectCard'
 import portfolioImage from '../assets/portfolioImage.png'
 import ytImage from '../assets/yt-project.png'
 import nikeImage from '../assets/nikeProject.png'
-import ProjectSlider from './ProjectSlider'
+
+const projects = [
+  {
+    thumbnail: ytImage,
+    title: 'YouTube Clone',
+    url: 'https://yt-clone-sumit.netlify.app/',
+    github: 'https://github.com/Sumit-exe',
+    stack: 'React.js | TypeScript | Tailwind | Redux | ReduxToolKit',
+    description:
+      'A browser-view YouTube clone with Home, Search, and Watch pages. Built with React, TypeScript, TailwindCSS and YouTube Data API — an exact replica of YouTube\'s modern UI.',
+  },
+  {
+    thumbnail: nikeImage,
+    title: 'Nike Ecommerce Store',
+    url: 'https://nike-store-sumit.netlify.app/',
+    github: 'https://github.com/Sumit-exe',
+    stack: 'React.js | Tailwind | Vite | JavaScript',
+    description:
+      'A stunning Nike E-commerce Store UI built with React and TailwindCSS. Features a modern, production-ready design following the latest industry trends.',
+  },
+  {
+    thumbnail: portfolioImage,
+    title: 'Personal Portfolio Website',
+    url: 'https://portfolio-sumitsharma.netlify.app/',
+    github: 'https://github.com/Sumit-exe',
+    stack: 'HTML | CSS | JavaScript',
+    description:
+      'A modern and animated portfolio website showcasing frontend skills, designed and developed with pure HTML, CSS, and Vanilla JavaScript animations.',
+  },
+];
 
 function Projects() {
   return (
-    <section id="project"className=''>
-        <h1 className='text-center my-10'>My <span className='text-main'>Projects</span></h1>
+    <section id="project" className="flex flex-col items-center gap-10">
+      {/* Heading */}
+      <div className="text-center">
+        <h1 className="text-4xl font-bold">
+          My <span className="text-main">Projects</span>
+        </h1>
+        <div className="w-16 h-1 bg-main mx-auto mt-3 rounded-full" />
+        <p className="text-gray-500 mt-4 text-base max-w-xl mx-auto">
+          A selection of things I've built — from full-stack apps to polished UI experiences.
+        </p>
+      </div>
 
-        <div className='grid grid-cols-3 gap-6 max-lg:grid-cols-1'>
-
-        <ProjectCard thumbnail={ytImage} title={'YouTube Clone'} url={"https://yt-clone-sumit.netlify.app/" } stack={`React.js | Tailwind | Redux | TypeScript | ReduxToolKit`} description={'I have made a browser view youtube clone using react, typescript, tailwindcss and youtubeApi. It has 3 pages - home , Search and Watch page. it is a exact replica of youtube UI   '}/>
-
-        <ProjectCard thumbnail={nikeImage} title={'Nike Ecommerce Store' } url={'https://nike-store-sumit.netlify.app/'} stack={`Html | CSS | Javascript | React.js | Tailwindcss  | Vite`} description={'I have Created a Stunning Nike Ecommerce Store UI . using React and Tailwindcss . It has mordern UI as per the New industry Trends ready to be showcased in production'}/>
-
-        <ProjectCard thumbnail={portfolioImage} title={'Personal Portfolio Website'} url={'https://portfolio-sumitsharma.netlify.app/'} stack={`HTML | CSS | Javascript | Javascript animations`} description={'I have Design and Developed a Modern Stunning Portfolio with amazing animations that showcase my frontend Skills. I have made this using Html css and Vallina Javascript'}/>
-
-
-        
-        </div>
-
-        {/* <div className='max-xl:hidden'>
-          <ProjectSlider  />
-        </div> */}
+      {/* Grid */}
+      <div className="grid grid-cols-3 gap-8 w-full max-lg:grid-cols-1 max-xl:grid-cols-2">
+        {projects.map((project, i) => (
+          <ProjectCard key={i} {...project} />
+        ))}
+      </div>
     </section>
-
-
   )
 }
 
